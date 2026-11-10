@@ -1,0 +1,36 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.northkeellabs/lacrm-mcp",
+  "title": "Less Annoying CRM",
+  "description": "Unofficial MCP server for Less Annoying CRM: 10 tools, read-only mode, API key from environment.",
+  "repository": {
+    "url": "https://github.com/northkeellabs/lacrm-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://github.com/northkeellabs/lacrm-mcp",
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "lacrm-mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "LACRM_API_KEY",
+          "description": "Less Annoying CRM API key (Settings > Programmer API)",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "LACRM_READ_ONLY",
+          "description": "Set to 1 to disable the write tools",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ]
+}
