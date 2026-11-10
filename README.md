@@ -15,7 +15,8 @@ tasks, look at pipelines, and (optionally) add notes, tasks and contacts or move
 
 1. In LACRM go to **Settings > Programmer API** and create an API key. Give it only the
    permissions you need (read-only is enough for the six read tools).
-2. Install [uv](https://docs.astral.sh/uv/) and clone this repo (or `pip install .`).
+2. Install [uv](https://docs.astral.sh/uv/). `uvx` fetches lacrm-mcp from
+   [PyPI](https://pypi.org/project/lacrm-mcp/) on first run (or use `pip install lacrm-mcp`).
 
 **Claude Desktop** (`claude_desktop_config.json`):
 
@@ -23,8 +24,8 @@ tasks, look at pipelines, and (optionally) add notes, tasks and contacts or move
 {
   "mcpServers": {
     "lacrm": {
-      "command": "uv",
-      "args": ["run", "--directory", "/path/to/lacrm-mcp", "lacrm-mcp", "--read-only"],
+      "command": "uvx",
+      "args": ["lacrm-mcp", "--read-only"],
       "env": { "LACRM_API_KEY": "your-api-key" }
     }
   }
@@ -34,8 +35,7 @@ tasks, look at pipelines, and (optionally) add notes, tasks and contacts or move
 **Claude Code:**
 
 ```bash
-claude mcp add lacrm --env LACRM_API_KEY=your-api-key -- \
-  uv run --directory /path/to/lacrm-mcp lacrm-mcp --read-only
+claude mcp add lacrm --env LACRM_API_KEY=your-api-key -- uvx lacrm-mcp --read-only
 ```
 
 Drop `--read-only` when you want the write tools. Then ask, for example: "Find contacts at
