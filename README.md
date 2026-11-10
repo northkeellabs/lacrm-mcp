@@ -1,5 +1,7 @@
 # lacrm-mcp
 
+<!-- mcp-name: com.northkeellabs/lacrm-mcp -->
+
 An MCP (Model Context Protocol) server that lets AI assistants such as Claude work with a
 [Less Annoying CRM](https://www.lessannoyingcrm.com) account: search contacts, read notes and
 tasks, look at pipelines, and (optionally) add notes, tasks and contacts or move pipeline items.
