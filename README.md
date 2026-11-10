@@ -57,6 +57,9 @@ Acme and show their latest notes" or "What tasks are due this week?"
 There are no delete tools. List tools return at most 50 results per page and report
 `has_more_results`; long text fields are truncated at 2,000 characters.
 
+**Tested against a live Less Annoying CRM account on 2026-11-10:** all 10 tools, in normal and
+read-only mode, over a real MCP stdio connection.
+
 ## Read-only mode
 
 Set `LACRM_READ_ONLY=1` or pass `--read-only`. The four write tools are then not registered at
