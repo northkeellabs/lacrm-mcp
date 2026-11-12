@@ -6,6 +6,10 @@ An MCP (Model Context Protocol) server that lets AI assistants such as Claude wo
 [Less Annoying CRM](https://www.lessannoyingcrm.com) account: search contacts, read notes and
 tasks, look at pipelines, and (optionally) add notes, tasks and contacts or move pipeline items.
 
+**Video walkthrough (62 s, voice + captions):** Claude answering a question from a live Less Annoying CRM account with demo data, the read-only mode, the hosted OAuth 2.1 version and the test results. GitHub starts videos muted: click the speaker icon in the player to hear the voiceover.
+
+https://github.com/user-attachments/assets/6b4cd92c-4732-4a2b-bd31-c6a62899b424
+
 > **Independent, unofficial project.** lacrm-mcp is built by Northkeel Labs against LACRM's
 > public API v2 documentation. It is not affiliated with, endorsed by, or supported by Less
 > Annoying CRM. "Less Annoying CRM" and "LACRM" are names of their respective owner and are
