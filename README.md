@@ -109,3 +109,7 @@ Requires Python 3.11+ and the MCP Python SDK 1.x (`mcp<2`, which provides `FastM
 ## Licence
 
 MIT. See [LICENSE](LICENSE).
+
+---
+
+Built by [Northkeel Labs](https://northkeellabs.com): AI agents and MCP servers that run inside your own systems.
