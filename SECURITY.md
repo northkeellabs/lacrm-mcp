@@ -50,5 +50,5 @@ repeated.
 
 ## Reporting a vulnerability
 
-Email hello@northkeellabs.com with details. Please do not open a public issue for security
+Email contact@northkeellabs.com with details. Please do not open a public issue for security
 reports.
